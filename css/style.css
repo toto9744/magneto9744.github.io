@@ -1,0 +1,348 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  background-color: #0d0c0d;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 25px;
+  overflow-x: hidden;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  1.2. TEXT COLOR
+/*---------------------------------------------------------------------*/
+.text-grey {
+  color: #a1a1a1;
+}
+
+.colored-text {
+  color: #c80a48;
+}
+
+/*---------------------------------------------------------------------*/
+/*  1.3. ANCHOR
+/*---------------------------------------------------------------------*/
+a {
+  color: #c80a48;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #c80a48;
+  outline: none;
+  text-decoration: none;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  1.4. HEADING
+/*---------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  2. COMPONENTS
+/*  2.1. BUTTON
+/*---------------------------------------------------------------------*/
+.btn.btn-custom {
+  background-color: #c80a48;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #970837;
+}
+
+.btn.btn-custom:hover {
+  background-color: #b0093f;
+}
+
+.btn.btn-custom > i {
+  padding-right: 2px;
+}
+
+
+@media (max-width: 767px) {
+  .btn.btn-lg.btn-custom {
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+  }
+}
+
+.btn.btn-custom.btn-circle {
+  width: 48px;
+  height: 48px;
+  line-height: 46px;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.btn.btn-sm.btn-custom.btn-circle {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+}
+
+.btn.btn-lg.btn-custom.btn-circle {
+  width: 54px;
+  height: 54px;
+  line-height: 52px;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.2. DIVIDER
+/*---------------------------------------------------------------------*/
+span.divider {
+  display: block;
+  margin: 35px 0px;
+  width: 150px;
+  height: 2px;
+  background-color: #c80a48;
+}
+
+span.divider.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  4. HOME
+/*---------------------------------------------------------------------*/
+header.hero {
+  display: table;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/geek.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@media (max-width: 991px) {
+  header.hero {
+    margin-top: 65px;
+  }
+}
+
+@media (min-width: 992px) {
+  header.hero {
+    height: calc(100% - 65px);
+  }
+}
+
+header.hero:before {
+  position: absolute;
+  content: '';
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header.hero .pattern-overlay {
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+}
+
+header.hero .hero-body {
+  position: relative;
+  z-index: 15;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 80px 30px;
+}
+
+@media (min-width: 480px) {
+  header.hero .hero-body {
+    padding: 100px 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  header.hero .hero-body {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  header.hero .hero-body {
+    padding: 0px;
+  }
+}
+
+header.hero .hero-body .hero-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+header.hero .hero-body .hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+
+@media (min-width: 600px) {
+  header.hero .hero-body .hero-text h1 {
+    font-size: 58px;
+  }
+}
+
+@media (min-width: 768px) {
+  header.hero .hero-body .hero-text h1 {
+    font-size: 68px;
+  }
+}
+
+header.hero .hero-body .hero-text h1.small {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 600px) {
+  header.hero .hero-body .hero-text h1.small {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  header.hero .hero-body .hero-text h1.small {
+    font-size: 40px;
+  }
+}
+
+header.hero .hero-body .hero-text h1.small > span.blinker {
+  position: relative;
+}
+
+header.hero .hero-body .hero-text h1.small > span.blinker:before {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  content: '';
+  width: 2px;
+  height: 30px;
+  margin-top: -15px;
+  background-color: #ffffff;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 768px) {
+  header.hero .hero-body .hero-text h1.small > span.blinker:before {
+    left: 10px;
+    width: 3px;
+    height: 40px;
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: 992px) {
+  header.hero .hero-body .hero-text h1.small > span.blinker:before {
+    width: 3px;
+    height: 50px;
+    margin-top: -25px;
+  }
+}
+
+header.hero .hero-body .hero-text p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+header.hero .hero-body .hero-text .page-scroll {
+  margin-top: 40px;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  4.1. TEXT SLIDER
+/*---------------------------------------------------------------------*/
+#text-slider .carousel-inner {
+  padding-bottom: 3px;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  4.2. SLIDESHOW
+/*---------------------------------------------------------------------*/
+@media (min-width: 1280px) {
+  header.hero.bg-slideshow-yes {
+    background: transparent;
+  }
+}
+
+/*---------------------------------------------------------------------*/
+/*  4.3. PARALLAX
+/*---------------------------------------------------------------------*/
+header.hero.parallax-yes {
+  display: block;
+  background: none;
+}
+
+header.hero.parallax-yes > .parallax {
+  width: 100%;
+  height: 100%;
+}
+
+header.hero.parallax-yes > .parallax > .bcg {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/toto.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@media (min-width: 1280px) {
+  header.hero.parallax-yes > .parallax > .bcg {
+    background-attachment: fixed;
+  }
+}
